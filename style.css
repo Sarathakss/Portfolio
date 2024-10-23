@@ -60,6 +60,10 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  background: linear-gradient(45deg, #ff0099, #366edc); /* Gradient background */
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .logo:hover {
@@ -174,6 +178,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  
 }
 
 .section__text {
@@ -197,6 +202,12 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+}
+.title{
+  background: linear-gradient(45deg, #ff0099, #366edc); /* Gradient background */
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 #socials-container {
@@ -367,7 +378,7 @@ article .icon {
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
+  height: 250px;
 }
 
 .project-title {
@@ -429,4 +440,7 @@ footer {
 
 footer p {
   text-align: center;
+}
+.contents{
+  padding-bottom: 10px;
 }
