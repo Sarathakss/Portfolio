@@ -421,18 +421,11 @@ development progress.
     </footer>
     <script>
       
-      function checkScreenSize() {
-        const desktopWidth = 1024; // Minimum width for desktop
-        if (window.innerWidth < desktopWidth) {
-            alert("This webpage is only accessible on desktop.");
-            document.body.innerHTML = ''; // Clear the body content for mobile users
-        }
-    }
-
-    window.onload = checkScreenSize;
-    window.onresize = checkScreenSize;
-    
-    
+      if (window.innerWidth < 1024) {
+        // Redirect to a different page or show a message
+        window.location.href = "desktop-only.html"; // create a separate page for mobile users
+      }
+      
       function toggleMenu() {
         const menu = document.querySelector(".menu-links");
         const icon = document.querySelector(".hamburger-icon");

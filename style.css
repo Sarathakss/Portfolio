@@ -448,3 +448,8 @@ footer p {
 .contents{
   padding-bottom: 10px;
 }
+@media (max-width: 768px) {
+  body {
+    display: none; /* Hide content on mobile */
+  }
+}
