@@ -462,6 +462,11 @@ development progress.
           p.innerHTML = "Tech Stack: Android Studio,Firebase content.";
           btn.innerHTML = "Description";
         }
+      }
+    
+      if (window.innerWidth < 500) {
+        document.getElementById("demo").style.display = "none";
+        alert("This website is not optimized for mobile devices. Please use a desktop or tablet for the best experience.");
       }</script>
   </body>
 </html>
