@@ -420,11 +420,19 @@ development progress.
       <p></p>
     </footer>
     <script>
-      if (window.innerWidth < 500) {
-        document.getElementById("demo").style.display = "none";
-        alert("This website is not optimized for mobile devices. Please use a desktop or tablet for the best experience.");
-      }
       
+      function checkScreenSize() {
+        const desktopWidth = 1024; // Minimum width for desktop
+        if (window.innerWidth < desktopWidth) {
+            alert("This webpage is only accessible on desktop.");
+            document.body.innerHTML = ''; // Clear the body content for mobile users
+        }
+    }
+
+    window.onload = checkScreenSize;
+    window.onresize = checkScreenSize;
+    
+    
       function toggleMenu() {
         const menu = document.querySelector(".menu-links");
         const icon = document.querySelector(".hamburger-icon");
