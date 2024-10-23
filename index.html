@@ -419,7 +419,13 @@ development progress.
       </nav>
       <p></p>
     </footer>
-    <script>function toggleMenu() {
+    <script>
+      if (window.innerWidth < 500) {
+        document.getElementById("demo").style.display = "none";
+        alert("This website is not optimized for mobile devices. Please use a desktop or tablet for the best experience.");
+      }
+      
+      function toggleMenu() {
         const menu = document.querySelector(".menu-links");
         const icon = document.querySelector(".hamburger-icon");
         menu.classList.toggle("open");
@@ -464,9 +470,6 @@ development progress.
         }
       }
     
-      if (window.innerWidth < 500) {
-        document.getElementById("demo").style.display = "none";
-        alert("This website is not optimized for mobile devices. Please use a desktop or tablet for the best experience.");
-      }</script>
+      </script>
   </body>
 </html>
