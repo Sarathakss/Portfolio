@@ -172,18 +172,25 @@ section {
   gap: 5rem;
   height: 80vh;
 }
-
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-  border: 5px solid #65a5cf; /* Change border color */
-            border-radius: 50%; /* Make the image circular */
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
-            object-fit: cover;
-  
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Set the desired size */
+  width: 200px; /* Set the same size for width */
+  overflow: hidden; /* Ensure the image is contained within the circle */
+  border: 5px solid #65a5cf; /* Border color */
+  border-radius: 50%; /* Make the image circular */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
+
+.section__pic-container img {
+  width: 150%; /* Fit the image inside the container */
+  height: 170%; /* Fit the image inside the container */
+  object-fit: cover; /* Ensure the image scales correctly */
+}
+
+
 
 .section__text {
   align-self: center;
